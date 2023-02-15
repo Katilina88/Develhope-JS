@@ -7,4 +7,6 @@ const person = {
   age: 25
 }
 
-console.log(Object.entries(person)); 
+for (const key of Object.keys(person)) {
+  console.log(key + ': ' + person[key]);
+}
