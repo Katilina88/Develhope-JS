@@ -5,12 +5,6 @@ const person = {
   age: 25,
 };
 
-const filterJson = {
-  id: person.id,
-  age: person.age
-}
-
-const json = JSON.stringify(filterJson); 
- 
+const json = JSON.stringify(person, ["id", "age"]);
 
 console.log(json); // Should return: { id: 1, age: 25 }
